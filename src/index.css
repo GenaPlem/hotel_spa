@@ -53,3 +53,7 @@ body {
   color: rgba(255, 255, 255, 0.87);
   background: linear-gradient(60deg, #000000 0%, #2C3E50 120%);
 }
+
+main {
+  flex: 1;
+}
