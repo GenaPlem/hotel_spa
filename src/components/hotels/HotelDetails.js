@@ -3,11 +3,14 @@ import hotelsData from "../../data/hotels.json";
 
 export default function HotelDetails() {
   const { id } = useParams();
-  console.log(hotelsData);
 
   const hotelData = hotelsData.find((hotel) => hotel.id.toString() === id);
 
-  console.log(hotelData);
+  if (!hotelData) {
+    return (
+      <h2 className=" my-10 text-2xl">Hotel with such id is not found!</h2>
+    );
+  }
 
   return (
     <>
