@@ -20,8 +20,8 @@ export default function HotelCard({ hotel }) {
       <p className="mb-2 text-xs font-bold">
         Available Dates:
         <br />
-        {hotel.datesOfTravel.map((date) => (
-          <span className="block pt-1 font-normal">
+        {hotel.datesOfTravel.map((date, index) => (
+          <span key={`date-${index}`} className="block pt-1 font-normal">
             {date}
             <br />
           </span>
@@ -31,8 +31,8 @@ export default function HotelCard({ hotel }) {
       <p className="mb-2 text-xs font-bold">
         Available Rooms:
         <br />
-        {hotel.rooms.map((room) => (
-          <span className="block pt-1 font-normal">
+        {hotel.rooms.map((room, index) => (
+          <span key={`room-${index}`} className="block pt-1 font-normal">
             {room.roomType}: {room.amount}
             <br />
           </span>
