@@ -1,10 +1,8 @@
 import { Link } from "react-router-dom";
 
 export default function HotelCard({ hotel }) {
-  // console.log(hotel)
-
   return (
-    <article className="relative flex flex-col justify-between overflow-hidden transition duration-300 transform border-sky-500 border rounded-xl hover:scale-105">
+    <article className="relative p-2 flex flex-col justify-between overflow-hidden transition duration-300 transform border-sky-500 border rounded-xl hover:scale-105">
       <div>
         <img
           src={hotel.imageUrl}
