@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function HotelCard({ hotel }) {
   // console.log(hotel)
 
@@ -38,6 +40,11 @@ export default function HotelCard({ hotel }) {
           </span>
         ))}
       </p>
+      <Link
+        to={`/hotels/${hotel.id}`}
+        className="absolute inset-0 z-10"
+        aria-label="Read more"
+      />
     </article>
   );
 }
