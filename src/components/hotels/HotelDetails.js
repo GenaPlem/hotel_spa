@@ -28,7 +28,7 @@ export default function HotelDetails() {
       <p className="text-left py-3 font-bold">{hotelData.boardBasis}</p>
       <div className="my-5 flex flex-wrap justify-between gap-2">
         <div className="flex gap-4">
-          <p>Available dates: </p>
+          <p className="font-bold">Available dates: </p>
           {hotelData.datesOfTravel.map((date, index) => (
             <p
               key={`date-${index}`}
